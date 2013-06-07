@@ -1,5 +1,5 @@
 ===================================
-DevExpress XAF Tooltips 0.1
+DevExpress XAF Tooltips v0.1
 ===================================
 -----------------------------
 Compatible with XAF versions:
