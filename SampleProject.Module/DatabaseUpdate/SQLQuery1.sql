@@ -1,0 +1,2 @@
+drop database SampleProject;
+go

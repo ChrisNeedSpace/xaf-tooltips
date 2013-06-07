@@ -1,0 +1,40 @@
+﻿/* jQuery tooltip */
+body .ui-tooltip {
+    border-width: 2px;
+}
+
+.ui-tooltip {
+    padding: 8px;
+    position: absolute;
+    z-index: 9999;
+    max-width: 300px;
+    -webkit-box-shadow: 0 0 5px #aaa;
+    box-shadow: 0 0 5px #aaa;
+    border-width: 2px;
+}
+
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff 50% 50% repeat-x;
+    color: #222222;
+    font-family: Verdana;
+}
+
+    .ui-widget-content a, .ui-widget-header a {
+        color: #222222;
+    }
+
+.ui-widget-header {
+    border: 1px solid #aaaaaa;
+    background: #cccccc 50% 50% repeat-x;
+    color: #222222;
+    font-weight: bold;
+}
+
+.ui-corner-all {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/**********************/

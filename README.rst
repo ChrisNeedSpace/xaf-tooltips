@@ -1,27 +1,48 @@
 =========================
-XAF Tooltips feature v0.2
+XAF Tooltips v1.0
 =========================
 -----------------------------
 Compatible with XAF versions:
 -----------------------------
+- **WEB only**
 - 12.1.10
 
 -----------
 Description
 -----------
-This is a **XAF WEB only** feature for **DevExpress eXpressAppFramework (XAF)** that provides Tooltips - simple easy-defined mechanism that integrates with detail views.
+This is a feature for **DevExpress eXpressAppFramework (XAF)** that provides Tooltips - simple easy-defined mechanism that integrates with detail views.
+
+**Functionality**
+
+- is easy defined
+- uses jQuery and jQuery-ui tooltip
+- supports html tags
+- no character number limit (as in standard IE browser dialog)
+
+**Example of use**
+
+Set an attribute on your entity property:
+
+    [Tooltip("This is a sample tooltip from an <br/><br/>(some BR tags)<br/><br/><br/><br/>attribute")]
+
+Or set a text in Model.DesignedDiffs.xafml (in a detail view layout item)
 
 **Significant files:**
-+ TooltipAttribute.cs (new)
-+ TooltipModelExtenders.cs (new)
-+ CustomLayoutTemplates.cs (new)
-+ WebLayoutController.cs (new)
-* Module.cs - modified ExtendModelInterfaces()
+
++ SampleProject.Module\\Infrastructure\\ModelExtenders\\Tooltips\\TooltipAttribute.cs   (new)
++ SampleProject.Module\\Infrastructure\\ModelExtenders\\Tooltips\\TooltipModelExtenders.cs   (new)
++ SampleProject.Module\\Module.cs   - modified ExtendModelInterfaces()
++ SampleProject.Module.Web\\Infrastructure\\Layout\\CustomLayoutTemplates.cs   (new)
++ SampleProject.Module.Web\\Infrastructure\\Layout\\WebLayoutController.cs   (new)
++ SampleProject.Web\\Default.aspx, DefaultVertical.aspx, Dialog.aspx   - modified head section
++ SampleProject.Web\\scripts\\jquery-ui.min.js   (new)
++ SampleProject.Web\\scripts\\jquery.min.js   (new)
++ SampleProject.Web\\style.css   (new)
 
 ------------
 Installation
 ------------
-#. Install XAF_
+#. Install XAF_.
 #. Get the source code for this plugin from github_, either using git_, or downloading directly:
 
    - To download using git, install git and then type 
@@ -29,13 +50,20 @@ Installation
      at the command prompt (on Linux, Windows is a bit different)
    - To download directly, go to the `project page`_ and click **Download**
 
-#. Create your XAF project if you don't have one.
-#. Each file in the repository has a namespace that indicates which project it refers to (Module, Module.Win, Module.Web, Win or Web). You need to copy the files to corresponding places in your project.
+#. Convert the sample project to your current version via project converter tool (it's located in your menu start/DevExpress DXperience XX.X/Tools/DXperience XX.X Project Converter).
+#. Run the project and open a detail view of any "Projekt" object.
+
+#. If you don't want to use the sample project, create your own and add the significant files. Each file in the repository has a namespace that indicates which project it refers to (Module, Module.Win, Module.Web, Win or Web). You need to copy the files to corresponding places in your project.
+
+**CAUTION!**
+
+If you are using the "CaptionWidth_" mechanism together with tooltips, you should uncomment the code section from CustomLayoutItemTemplates.cs file.
 
 .. _XAF: http://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx
 .. _git: http://git-scm.com/
 .. _github:
 .. _project page: https://github.com/KrzysztofKielce/xaf-tooltips
+.. _CaptionWidth: https://github.com/KrzysztofKielce/xaf-caption-width
 
 
 ----------

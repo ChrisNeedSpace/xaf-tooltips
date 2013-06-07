@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="SampleProject" Logo="ExpressAppLogo">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="12.1.10.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Projekt_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" ShowCaption="True" Caption="Projekt">
+          <TabbedGroup Id="Item1" CaptionLocation="Top" Index="0" RelativeSize="94" IsNewNode="True">
+            <LayoutGroup Id="Projekt" ShowCaption="True" Direction="Horizontal" Index="0" RelativeSize="100" Caption="Basic data" IsNewNode="True">
+              <LayoutGroup Id="Projekt_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="TytulProjektu" ViewItem="TytulProjektu" SizeConstraintsType="Default" Index="0" RelativeSize="4" Tooltip="This is a tooltip from the designer." IsNewNode="True" />
+                <LayoutItem Id="Status" ViewItem="Status" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+                <LayoutItem Id="Opis" ViewItem="Opis" SizeConstraintsType="Default" Index="2" RelativeSize="3" Tooltip="Another tooltip from designer. &lt;br/&gt;It&lt;br/&gt; &lt;b&gt;overrides&lt;/b&gt;&lt;br/&gt; a &lt;br/&gt;&lt;h1&gt;tooltip&lt;/h1&gt; from attribute." IsNewNode="True" />
+                <LayoutItem Id="Opis2" ViewItem="Opis2" SizeConstraintsType="Default" Index="3" RelativeSize="87" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Projekt_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+                <LayoutItem Id="Opis3" ViewItem="Opis3" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+                <LayoutItem Id="DataRozpoczecia" ViewItem="DataRozpoczecia" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+                <LayoutItem Id="DataZakonczenia" ViewItem="DataZakonczenia" SizeConstraintsType="Default" Index="2" RelativeSize="91" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Zadania_Group" ShowCaption="True" Caption="Zadania" Index="1" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="Zadania" ViewItem="Zadania" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="Zadania_Group" Direction="Vertical" Index="1" RelativeSize="78" ImageName="" Removed="True">
+            <LayoutItem Id="Zadania" SizeConstraintsType="Default" RelativeSize="94" ViewItem="Zadania" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" ImageName="" Removed="True">
+            <TabbedGroup Id="Item1" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Projekt" ShowCaption="True" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Projekt_col1" ShowCaption="False" Index="0" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="TytulProjektu" ViewItem="TytulProjektu" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+                  <LayoutItem Id="Status" ViewItem="Status" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+                  <LayoutItem Id="Opis" ViewItem="Opis" SizeConstraintsType="Default" Index="2" RelativeSize="3" IsNewNode="True" />
+                  <LayoutItem Id="Opis2" ViewItem="Opis2" SizeConstraintsType="Default" Index="3" RelativeSize="88" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Projekt_col2" ShowCaption="False" Index="1" RelativeSize="50" IsNewNode="True">
+                  <LayoutItem Id="Opis3" ViewItem="Opis3" SizeConstraintsType="Default" Index="0" RelativeSize="4" IsNewNode="True" />
+                  <LayoutItem Id="DataRozpoczecia" ViewItem="DataRozpoczecia" SizeConstraintsType="Default" Index="1" RelativeSize="3" IsNewNode="True" />
+                  <LayoutItem Id="DataZakonczenia" ViewItem="DataZakonczenia" SizeConstraintsType="Default" Index="2" RelativeSize="91" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Zadania_Group" ShowCaption="True" Caption="Zadania" Index="1" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Zadania" ViewItem="Zadania" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="Projekt" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Projekt_ListView" AllowEdit="True" />
+  </Views>
+</Application>
