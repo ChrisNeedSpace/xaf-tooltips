@@ -1,6 +1,6 @@
-===================================
-DevExpress XAF Tooltips v0.2
-===================================
+=========================
+XAF Tooltips feature v0.2
+=========================
 -----------------------------
 Compatible with XAF versions:
 -----------------------------
@@ -9,8 +9,14 @@ Compatible with XAF versions:
 -----------
 Description
 -----------
-This is a plugin for **DevExpress eXpressAppFramework (XAF)** that provides Tooltips - simple easy-defined mechanism that integrates with detail views.
+This is a **XAF WEB only** feature for **DevExpress eXpressAppFramework (XAF)** that provides Tooltips - simple easy-defined mechanism that integrates with detail views.
 
+**Significant files:**
++ TooltipAttribute.cs (new)
++ TooltipModelExtenders.cs (new)
++ CustomLayoutTemplates.cs (new)
++ WebLayoutController.cs (new)
+* Module.cs - modified ExtendModelInterfaces()
 
 ------------
 Installation
