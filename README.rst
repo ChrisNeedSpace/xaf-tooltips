@@ -29,15 +29,15 @@ Or set a text in Model.DesignedDiffs.xafml (in a detail view layout item)
 
 **Significant files:**
 
-+ SampleProject.Module\\Infrastructure\\ModelExtenders\\Tooltips\\TooltipAttribute.cs   (new)
-+ SampleProject.Module\\Infrastructure\\ModelExtenders\\Tooltips\\TooltipModelExtenders.cs   (new)
-+ SampleProject.Module\\Module.cs   - modified ExtendModelInterfaces()
-+ SampleProject.Module.Web\\Infrastructure\\Layout\\CustomLayoutTemplates.cs   (new)
-+ SampleProject.Module.Web\\Infrastructure\\Layout\\WebLayoutController.cs   (new)
-+ SampleProject.Web\\Default.aspx, DefaultVertical.aspx, Dialog.aspx   - modified head section
-+ SampleProject.Web\\scripts\\jquery-ui.min.js   (new)
-+ SampleProject.Web\\scripts\\jquery.min.js   (new)
-+ SampleProject.Web\\style.css   (new)
++ SampleProject.Module\\Infrastructure\\ModelExtenders\\Tooltips\\TooltipAttribute.cs   *(new)*
++ SampleProject.Module\\Infrastructure\\ModelExtenders\\Tooltips\\TooltipModelExtenders.cs   *(new)*
++ SampleProject.Module\\Module.cs   *- modified ExtendModelInterfaces()*
++ SampleProject.Module.Web\\Infrastructure\\Layout\\CustomLayoutTemplates.cs   *(new)*
++ SampleProject.Module.Web\\Infrastructure\\Layout\\WebLayoutController.cs   *(new)*
++ SampleProject.Web\\Default.aspx, DefaultVertical.aspx, Dialog.aspx   *- modified head section*
++ SampleProject.Web\\scripts\\jquery-ui.min.js   *(new)*
++ SampleProject.Web\\scripts\\jquery.min.js   *(new)*
++ SampleProject.Web\\style.css   *(new)*
 
 ------------
 Installation
