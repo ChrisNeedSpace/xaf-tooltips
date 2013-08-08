@@ -10,7 +10,9 @@ Compatible with XAF versions:
 -----------
 Description
 -----------
-This is a feature for **DevExpress eXpressAppFramework (XAF)** that provides Tooltips - simple easy-defined mechanism that integrates with detail views.
+This is a feature for **DevExpress eXpressAppFramework (XAF)** that provides Tooltips - simple easy-defined mechanism that integrates with detail views:
+
+.. image:: https://raw.github.com/KrzysztofKielce/xaf-tooltips/master/Screenshot.png
 
 **Functionality**
 
