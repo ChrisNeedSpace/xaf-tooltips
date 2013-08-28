@@ -74,11 +74,11 @@ Disclaimer
 This is **beta** code.  It is probably okay for production environments, but may not work exactly as expected.  Refunds will not be given.  If it breaks, you get to keep both parts.
 
 -------
-Release
+License
 -------
-All code herein is Copylefted_.
+All code herein is under the Do What The Fuck You Want To Public License (WTFPL_).
 
-.. _Copylefted: http://en.wikipedia.org/wiki/Copyleft
+.. _WTFPL: http://www.wtfpl.net/
 
 ---------
 About XAF
